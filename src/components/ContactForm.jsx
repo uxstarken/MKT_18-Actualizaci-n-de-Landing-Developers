@@ -365,7 +365,7 @@ const ContactForm = ({ preselectedService, preselectedPlatform }) => {
                 <div>
                   <div className="flex items-center gap-2.5 mb-6">
                     <User className="w-5 h-5 text-starken-green" />
-                    <h4 className="font-title font-bold text-[16px] md:text-[18px] text-[#303030]">
+                    <h4 className="font-title font-bold text-[18px] text-[#303030]">
                       Tus datos
                     </h4>
                   </div>
@@ -473,7 +473,7 @@ const ContactForm = ({ preselectedService, preselectedPlatform }) => {
                 <div className="pt-8 border-t border-slate-200">
                   <div className="flex items-center gap-2.5 mb-6">
                     <MapPin className="w-5 h-5 text-starken-green" />
-                    <h4 className="font-title font-bold text-[16px] md:text-[18px] text-[#303030]">
+                    <h4 className="font-title font-bold text-[18px] text-[#303030]">
                       Datos de dirección
                     </h4>
                   </div>
@@ -678,7 +678,7 @@ const ContactForm = ({ preselectedService, preselectedPlatform }) => {
                 <div className="pt-8 border-t border-slate-200">
                   <div className="flex items-center gap-2.5 mb-6">
                     <Lock className="w-5 h-5 text-starken-green" />
-                    <h4 className="font-title font-bold text-[16px] md:text-[18px] text-[#303030]">
+                    <h4 className="font-title font-bold text-[18px] text-[#303030]">
                       Contacto y acceso
                     </h4>
                   </div>

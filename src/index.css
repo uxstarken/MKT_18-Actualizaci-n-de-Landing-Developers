@@ -294,19 +294,21 @@ textarea::placeholder {
 
 /* Mobile Responsive Overrides (max-width: 768px) */
 @media (max-width: 768px) {
-  /* En mobile: todos los textos de cuerpo de 16px pasan a 14px */
-  .text-\[16px\],
+  /* En mobile: todos los textos de cuerpo de 16px pasan a 14px (excluye títulos h1-h6) */
   p.text-\[16px\],
   span.text-\[16px\],
   div.text-\[16px\],
-  label.text-\[16px\] {
+  label.text-\[16px\],
+  li.text-\[16px\],
+  a.text-\[16px\] {
     font-size: 14px !important;
   }
 
   /* En mobile: los titulos que son de 18px pasan a 16px */
   .text-\[18px\],
   h4.text-\[18px\],
-  h3.text-\[18px\] {
+  h3.text-\[18px\],
+  h2.text-\[18px\] {
     font-size: 16px !important;
   }
 
