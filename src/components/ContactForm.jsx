@@ -374,7 +374,7 @@ const ContactForm = ({ preselectedService, preselectedPlatform }) => {
                     
                     {/* RUT personal o empresa */}
                     <div>
-                      <label className="block font-body text-[14px] md:text-[16px] font-bold text-[#303030] mb-1.5">
+                      <label className="block font-body text-[14px] font-bold text-[#303030] mb-1.5">
                         Rut personal o empresa <span className="text-rose-500">*</span>
                       </label>
                       <input
@@ -401,7 +401,7 @@ const ContactForm = ({ preselectedService, preselectedPlatform }) => {
 
                     {/* Nombre personal o empresa */}
                     <div>
-                      <label className="block font-body text-[14px] md:text-[16px] font-bold text-[#303030] mb-1.5">
+                      <label className="block font-body text-[14px] font-bold text-[#303030] mb-1.5">
                         Nombre personal o empresa <span className="text-rose-500">*</span>
                       </label>
                       <input
@@ -427,7 +427,7 @@ const ContactForm = ({ preselectedService, preselectedPlatform }) => {
 
                     {/* Apellido (si es que aplica) */}
                     <div>
-                      <label className="block font-body text-[14px] md:text-[16px] font-bold text-[#303030] mb-1.5">
+                      <label className="block font-body text-[14px] font-bold text-[#303030] mb-1.5">
                         Apellido <span className="text-[#505050] font-normal">(si es que aplica)</span>
                       </label>
                       <input
@@ -442,7 +442,7 @@ const ContactForm = ({ preselectedService, preselectedPlatform }) => {
 
                     {/* E-mail */}
                     <div>
-                      <label className="block font-body text-[14px] md:text-[16px] font-bold text-[#303030] mb-1.5">
+                      <label className="block font-body text-[14px] font-bold text-[#303030] mb-1.5">
                         Correo electrónico / e-mail <span className="text-rose-500">*</span>
                       </label>
                       <input
@@ -482,7 +482,7 @@ const ContactForm = ({ preselectedService, preselectedPlatform }) => {
                     
                     {/* Dirección */}
                     <div className="md:col-span-2">
-                      <label className="block font-body text-[14px] md:text-[16px] font-bold text-[#303030] mb-1.5">
+                      <label className="block font-body text-[14px] font-bold text-[#303030] mb-1.5">
                         Dirección <span className="text-rose-500">*</span>
                       </label>
                       <input
@@ -508,7 +508,7 @@ const ContactForm = ({ preselectedService, preselectedPlatform }) => {
 
                     {/* Comuna */}
                     <div>
-                      <label className="block font-body text-[14px] md:text-[16px] font-bold text-[#303030] mb-1.5">
+                      <label className="block font-body text-[14px] font-bold text-[#303030] mb-1.5">
                         Ingresa tu comuna <span className="text-rose-500">*</span>
                       </label>
                       <div ref={comunaRef} className="relative">
@@ -584,7 +584,7 @@ const ContactForm = ({ preselectedService, preselectedPlatform }) => {
 
                     {/* Sucursal frecuente */}
                     <div>
-                      <label className="block font-body text-[14px] md:text-[16px] font-bold text-[#303030] mb-1.5">
+                      <label className="block font-body text-[14px] font-bold text-[#303030] mb-1.5">
                         Sucursal frecuente <span className="text-rose-500">*</span>
                       </label>
                       <div ref={sucursalRef} className="relative">
@@ -687,7 +687,7 @@ const ContactForm = ({ preselectedService, preselectedPlatform }) => {
                     
                     {/* Teléfono */}
                     <div>
-                      <label className="block font-body text-[14px] md:text-[16px] font-bold text-[#303030] mb-1.5">
+                      <label className="block font-body text-[14px] font-bold text-[#303030] mb-1.5">
                         Ingresa tu teléfono <span className="text-[#505050] font-normal">(opcional)</span>
                       </label>
                       <input
@@ -702,7 +702,7 @@ const ContactForm = ({ preselectedService, preselectedPlatform }) => {
 
                     {/* Móvil */}
                     <div>
-                      <label className="block font-body text-[14px] md:text-[16px] font-bold text-[#303030] mb-1.5">
+                      <label className="block font-body text-[14px] font-bold text-[#303030] mb-1.5">
                         Ingresa tu móvil <span className="text-rose-500">*</span>
                       </label>
                       <div className="relative">
@@ -733,7 +733,7 @@ const ContactForm = ({ preselectedService, preselectedPlatform }) => {
 
                     {/* Ingresa tu contraseña */}
                     <div>
-                      <label className="block font-body text-[14px] md:text-[16px] font-bold text-[#303030] mb-1.5">
+                      <label className="block font-body text-[14px] font-bold text-[#303030] mb-1.5">
                         Ingresa tu contraseña <span className="text-rose-500">*</span>
                       </label>
                       <div className="relative">
@@ -790,7 +790,7 @@ const ContactForm = ({ preselectedService, preselectedPlatform }) => {
 
                     {/* Confirma tu contraseña */}
                     <div>
-                      <label className="block font-body text-[14px] md:text-[16px] font-bold text-[#303030] mb-1.5">
+                      <label className="block font-body text-[14px] font-bold text-[#303030] mb-1.5">
                         Confirma tu contraseña <span className="text-rose-500">*</span>
                       </label>
                       <div className="relative">
