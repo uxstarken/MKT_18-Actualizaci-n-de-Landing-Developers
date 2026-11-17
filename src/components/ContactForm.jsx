@@ -766,21 +766,21 @@ const ContactForm = ({ preselectedService, preselectedPlatform }) => {
                       )}
 
                       {/* Checklist de requisitos de contraseña */}
-                      <div className="mt-2.5 space-y-2 pl-1">
-                        <div className={`flex items-center gap-2 text-[14px] transition-colors ${hasUpper ? 'text-starken-green font-semibold' : 'text-[#505050]'}`}>
-                          <span className={`w-4 h-4 rounded-full flex items-center justify-center text-[10px] font-bold ${hasUpper ? 'bg-starken-green text-white' : 'border border-slate-300 text-[#505050]'}`}>
+                      <div className="mt-2.5 space-y-1.5 md:space-y-2 pl-1">
+                        <div className={`flex items-center gap-2 text-[12px] md:text-[14px] transition-colors ${hasUpper ? 'text-starken-green font-semibold' : 'text-[#505050]'}`}>
+                          <span className={`w-3.5 h-3.5 md:w-4 md:h-4 rounded-full flex items-center justify-center text-[9px] md:text-[10px] font-bold ${hasUpper ? 'bg-starken-green text-white' : 'border border-slate-300 text-[#505050]'}`}>
                             {hasUpper ? '✓' : '!'}
                           </span>
                           <span>Una letra mayúscula</span>
                         </div>
-                        <div className={`flex items-center gap-2 text-[14px] transition-colors ${hasLower ? 'text-starken-green font-semibold' : 'text-[#505050]'}`}>
-                          <span className={`w-4 h-4 rounded-full flex items-center justify-center text-[10px] font-bold ${hasLower ? 'bg-starken-green text-white' : 'border border-slate-300 text-[#505050]'}`}>
+                        <div className={`flex items-center gap-2 text-[12px] md:text-[14px] transition-colors ${hasLower ? 'text-starken-green font-semibold' : 'text-[#505050]'}`}>
+                          <span className={`w-3.5 h-3.5 md:w-4 md:h-4 rounded-full flex items-center justify-center text-[9px] md:text-[10px] font-bold ${hasLower ? 'bg-starken-green text-white' : 'border border-slate-300 text-[#505050]'}`}>
                             {hasLower ? '✓' : '!'}
                           </span>
                           <span>Una letra minúscula</span>
                         </div>
-                        <div className={`flex items-center gap-2 text-[14px] transition-colors ${hasNumber ? 'text-starken-green font-semibold' : 'text-[#505050]'}`}>
-                          <span className={`w-4 h-4 rounded-full flex items-center justify-center text-[10px] font-bold ${hasNumber ? 'bg-starken-green text-white' : 'border border-slate-300 text-[#505050]'}`}>
+                        <div className={`flex items-center gap-2 text-[12px] md:text-[14px] transition-colors ${hasNumber ? 'text-starken-green font-semibold' : 'text-[#505050]'}`}>
+                          <span className={`w-3.5 h-3.5 md:w-4 md:h-4 rounded-full flex items-center justify-center text-[9px] md:text-[10px] font-bold ${hasNumber ? 'bg-starken-green text-white' : 'border border-slate-300 text-[#505050]'}`}>
                             {hasNumber ? '✓' : '!'}
                           </span>
                           <span>Un dígito numérico</span>
