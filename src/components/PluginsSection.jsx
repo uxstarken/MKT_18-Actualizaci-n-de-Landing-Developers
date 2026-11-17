@@ -84,8 +84,8 @@ const PluginsSection = ({ onSelectPluginForContact, onOpenManual, onOpenVideo })
       <div className="container-starken">
 
         {/* Header */}
-        <div className="text-center max-w-4xl mx-auto mb-14">
-          <h2 className="text-[28px] font-bold font-title text-white mb-4 leading-tight">
+        <div className="text-center max-w-4xl mx-auto mb-10 md:mb-12">
+          <h2 className="text-[28px] font-bold font-title text-white mb-2.5 leading-tight">
             Nuestros plugins
           </h2>
           <p className="font-body text-[14px] md:text-[16px] text-white/90 leading-relaxed whitespace-normal lg:whitespace-nowrap">

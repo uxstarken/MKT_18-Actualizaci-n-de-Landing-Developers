@@ -61,8 +61,8 @@ const ResourcesSection = () => {
       <div className="container-starken">
         
         {/* Header */}
-        <div className="text-center max-w-4xl mx-auto mb-12">
-          <h2 className="text-[28px] font-bold font-title text-[#303030] mb-4 leading-tight">
+        <div className="text-center max-w-4xl mx-auto mb-10 md:mb-12">
+          <h2 className="text-[28px] font-bold font-title text-[#303030] mb-2.5 leading-tight">
             Recursos y <span className="text-starken-green">recomendaciones</span>
           </h2>
           <p className="font-body text-[14px] md:text-[16px] text-[#505050] leading-relaxed whitespace-normal lg:whitespace-nowrap">
@@ -70,7 +70,7 @@ const ResourcesSection = () => {
           </p>
 
           {/* Tab Selector */}
-          <div className="mt-8 inline-flex p-1.5 rounded-2xl bg-slate-100 border border-slate-200">
+          <div className="mt-6 md:mt-8 inline-flex p-1.5 rounded-2xl bg-slate-100 border border-slate-200">
             <button
               onClick={() => setResourceTab('faq')}
               className={`px-5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all ${

@@ -308,8 +308,8 @@ const ContactForm = ({ preselectedService, preselectedPlatform }) => {
       <div className="container-starken">
         
         {/* Section Title */}
-        <div className="text-center max-w-3xl mx-auto mb-14">
-          <h2 className="text-[28px] font-bold font-title text-[#303030] mb-4 leading-tight">
+        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-12">
+          <h2 className="text-[28px] font-bold font-title text-[#303030] mb-2.5 leading-tight">
             Registro y <span className="text-starken-green">solicitud de contacto</span>
           </h2>
           <p className="font-body text-[14px] md:text-[16px] text-[#505050] leading-relaxed">
