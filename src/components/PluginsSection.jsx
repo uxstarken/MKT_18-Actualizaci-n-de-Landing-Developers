@@ -93,16 +93,21 @@ const PluginsSection = ({ onSelectPluginForContact, onOpenManual, onOpenVideo })
           </p>
 
           {/* Token Banner */}
-          <div className="mt-6 inline-flex flex-wrap items-center justify-center gap-3 p-3 px-6 rounded-2xl bg-white/15 backdrop-blur-md border border-white/25 shadow-sm text-white">
-            <Key className="w-4 h-4 text-amber-300" />
-            <span className="text-[14px] font-semibold text-white">
-              ¿Necesitas tu Token de API para configurar el plugin?
-            </span>
+          <div className="mt-6 inline-flex flex-col md:flex-row items-center justify-center gap-2.5 md:gap-3 p-4 md:p-3 px-5 md:px-6 rounded-2xl bg-white/15 backdrop-blur-md border border-white/25 shadow-sm text-white max-w-md md:max-w-none mx-auto">
+            {/* Icon + Text horizontally aligned */}
+            <div className="flex items-center justify-center gap-2">
+              <Key className="w-4 h-4 text-amber-300 flex-shrink-0" />
+              <span className="text-[14px] font-semibold text-white">
+                ¿Necesitas tu Token de API para configurar el plugin?
+              </span>
+            </div>
+
+            {/* Hyperlink centered below on mobile, inline on desktop */}
             <a
               href="https://starkenpro.cl/login?formPlugin=true"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[14px] font-bold text-white underline hover:text-white/80 inline-flex items-center gap-1"
+              className="text-[14px] font-bold text-white underline hover:text-white/80 inline-flex items-center gap-1 justify-center"
             >
               Obtener Token en StarkenPro
               <ArrowUpRight className="w-3.5 h-3.5" />
