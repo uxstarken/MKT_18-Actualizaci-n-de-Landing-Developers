@@ -93,15 +93,15 @@ const PluginsSection = ({ onSelectPluginForContact, onOpenManual, onOpenVideo })
           </p>
 
           {/* Token Banner */}
-          <div className="mt-5 inline-flex p-3.5 sm:p-4 md:py-2.5 md:px-6 rounded-2xl bg-white/15 backdrop-blur-md border border-white/25 shadow-sm text-white max-w-sm sm:max-w-md md:max-w-none mx-auto text-left">
-            <div className="flex items-center gap-3 sm:gap-4 md:gap-3 w-full">
+          <div className="mt-5 w-full md:w-auto flex md:inline-flex p-4 md:py-2.5 md:px-6 rounded-2xl bg-white/15 backdrop-blur-md border border-white/25 shadow-sm text-white mx-auto text-left">
+            <div className="flex items-center gap-3.5 sm:gap-4 md:gap-3 w-full">
               {/* Columna 1 (~20%): Icono de llave más grande en mobile */}
               <div className="flex-shrink-0 flex items-center justify-center">
                 <Key className="w-6 h-6 sm:w-7 sm:h-7 md:w-4 md:h-4 text-amber-300" />
               </div>
 
               {/* Columna 2 (~80%): Pregunta arriba y enlace abajo en mobile, inline en desktop */}
-              <div className="flex flex-col md:flex-row md:items-center gap-1 md:gap-3 text-left">
+              <div className="flex flex-col md:flex-row md:items-center gap-1 md:gap-3 text-left flex-1">
                 <p className="text-[13px] sm:text-[14px] font-semibold text-white leading-tight">
                   ¿Necesitas tu Token de API
                   <br className="block md:hidden" />{' '}
