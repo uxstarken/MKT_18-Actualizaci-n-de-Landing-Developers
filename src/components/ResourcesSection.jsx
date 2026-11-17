@@ -77,7 +77,7 @@ const ResourcesSection = () => {
                 resourceTab === 'faq' ? 'bg-white text-starken-green shadow-sm' : 'text-[#505050] hover:text-[#303030]'
               }`}
             >
-              Preguntas Frecuentes (FAQ)
+              Preguntas frecuentes (FAQ)
             </button>
             <button
               onClick={() => setResourceTab('informacion')}
