@@ -214,59 +214,83 @@ const ServicesSection = ({ onSelectServiceForContact, isLoggedIn = false, onTogg
           </p>
         </div>
 
+        {/* Mobile: Service Capsules Navigation (Outside the Card) */}
+        <div className="block md:hidden mb-5">
+          <div
+            ref={tabsContainerRef}
+            onScroll={handleTabsScroll}
+            className="flex flex-row gap-2.5 overflow-x-auto no-scrollbar pb-2 px-1 scroll-smooth snap-x snap-mandatory"
+          >
+            {services.map((item, idx) => {
+              const ItemIcon = item.icon;
+              const isActive = item.id === activeTab;
+              return (
+                <button
+                  key={item.id}
+                  ref={(el) => (tabRefs.current[idx] = el)}
+                  onClick={() => handleSelectTab(item.id, idx)}
+                  className={`flex items-center gap-2 px-4 py-2.5 rounded-full font-bold transition-all whitespace-nowrap flex-shrink-0 snap-start text-[14px] ${
+                    isActive
+                      ? 'bg-starken-green text-white shadow-md shadow-emerald-700/15 border border-starken-green'
+                      : 'bg-white text-[#303030] border border-slate-200 hover:border-slate-300'
+                  }`}
+                >
+                  <ItemIcon className={`w-4 h-4 flex-shrink-0 ${isActive ? 'text-white' : 'text-[#303030]'}`} />
+                  <span>{item.name}</span>
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Mobile Swipe / Pagination Dots Indicator */}
+          <div className="flex items-center justify-center gap-1.5 pt-2 pb-1">
+            {services.map((item, idx) => {
+              const isBar = idx === activeDotIndex;
+              return (
+                <button
+                  key={item.id}
+                  onClick={() => handleSelectTab(item.id, idx)}
+                  className={`transition-all duration-300 rounded-full focus:outline-none ${
+                    isBar
+                      ? 'w-6 h-1.5 bg-starken-green shadow-sm'
+                      : 'w-1.5 h-1.5 bg-slate-300 hover:bg-slate-400'
+                  }`}
+                  aria-label={`Ver servicio ${item.name}`}
+                />
+              );
+            })}
+          </div>
+        </div>
+
         {/* Main Interactive Box */}
         <div className="w-full bg-white rounded-2xl border border-slate-200 shadow-xl overflow-hidden">
           <div className="flex flex-col md:flex-row">
 
-            {/* Left Tabs Navigation */}
-            <div className="w-full md:w-64 bg-slate-50/80 p-3 md:p-4 border-b md:border-b-0 md:border-r border-slate-200 flex flex-col justify-between">
+            {/* Desktop Left Tabs Navigation */}
+            <div className="hidden md:flex md:w-64 bg-slate-50/80 p-4 border-r border-slate-200 flex-col justify-between">
               
-              {/* Scrollable Tabs */}
-              <div
-                ref={tabsContainerRef}
-                onScroll={handleTabsScroll}
-                className="flex flex-row md:flex-col gap-2 overflow-x-auto md:overflow-visible no-scrollbar pb-1 md:pb-0 scroll-smooth snap-x snap-mandatory"
-              >
+              {/* Desktop Tabs List */}
+              <div className="flex flex-col gap-2">
                 {services.map((item, idx) => {
                   const ItemIcon = item.icon;
                   const isActive = item.id === activeTab;
                   return (
                     <button
                       key={item.id}
-                      ref={(el) => (tabRefs.current[idx] = el)}
                       onClick={() => handleSelectTab(item.id, idx)}
-                      className={`flex items-center gap-2 px-3 py-2.5 sm:px-4 sm:py-3 rounded-xl text-left font-bold transition-all whitespace-nowrap md:whitespace-normal flex-shrink-0 w-auto min-w-[145px] md:w-full snap-start group ${isActive
+                      className={`flex items-center gap-2 px-4 py-3 rounded-xl text-left font-bold transition-all w-full group ${isActive
                         ? 'bg-white text-starken-green shadow-sm border border-slate-200/80'
                         : 'text-[#303030] hover:bg-slate-100 hover:text-[#303030]'
                         }`}
                     >
                       <div
-                        className={`w-7 h-7 sm:w-8 sm:h-8 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors ${isActive ? 'bg-starken-green-light text-starken-green' : 'bg-slate-200/60 text-[#303030] group-hover:bg-white'
+                        className={`w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors ${isActive ? 'bg-starken-green-light text-starken-green' : 'bg-slate-200/60 text-[#303030] group-hover:bg-white'
                           }`}
                       >
                         <ItemIcon className="w-4 h-4" />
                       </div>
                       <span className="text-[14px] font-bold">{item.name}</span>
                     </button>
-                  );
-                })}
-              </div>
-
-              {/* Mobile Swipe / Pagination Dots Indicator */}
-              <div className="flex md:hidden items-center justify-center gap-1.5 pt-3 pb-1">
-                {services.map((item, idx) => {
-                  const isBar = idx === activeDotIndex;
-                  return (
-                    <button
-                      key={item.id}
-                      onClick={() => handleSelectTab(item.id, idx)}
-                      className={`transition-all duration-300 rounded-full focus:outline-none ${
-                        isBar
-                          ? 'w-6 h-1.5 bg-starken-green shadow-sm'
-                          : 'w-1.5 h-1.5 bg-slate-300 hover:bg-slate-400'
-                      }`}
-                      aria-label={`Ver servicio ${item.name}`}
-                    />
                   );
                 })}
               </div>
