@@ -12,15 +12,17 @@ const ManualModal = ({ isOpen, onClose, platform, pdfUrl }) => {
       >
         {/* Modal Header */}
         <div className="flex items-center justify-between px-6 py-4 border-b border-slate-100 bg-slate-50/80">
-          <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-lg bg-starken-green-light flex items-center justify-center text-starken-green">
-              <FileText className="w-4 h-4" />
+          <div className="flex items-center gap-3">
+            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-starken-green-light flex items-center justify-center text-starken-green flex-shrink-0">
+              <FileText className="w-5 h-5" />
             </div>
             <div>
-              <h3 className="text-sm sm:text-base font-bold text-starken-text-dark">
+              <h3 className="text-[16px] sm:text-[18px] font-bold text-starken-text-dark leading-tight">
                 Manual de Integración {platform}
               </h3>
-              <span className="text-xs text-starken-text-muted">Documento Técnico Oficial Starken</span>
+              <p className="text-[14px] sm:text-[16px] text-starken-text-muted mt-0.5">
+                Documento Técnico Oficial Starken
+              </p>
             </div>
           </div>
 
