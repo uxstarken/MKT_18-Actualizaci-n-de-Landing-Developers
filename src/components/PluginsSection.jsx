@@ -93,16 +93,16 @@ const PluginsSection = ({ onSelectPluginForContact, onOpenManual, onOpenVideo })
           </p>
 
           {/* Token Banner */}
-          <div className="mt-5 w-full md:w-auto flex md:inline-flex p-4 md:py-2.5 md:px-6 rounded-2xl bg-white/15 backdrop-blur-md border border-white/25 shadow-sm text-white mx-auto text-left">
-            <div className="flex items-center gap-3.5 sm:gap-4 md:gap-3 w-full">
-              {/* Columna 1 (~20%): Icono de llave más grande en mobile */}
+          <div className="mt-5 w-full md:w-auto flex md:inline-flex p-4 px-6 md:py-2.5 md:px-6 rounded-2xl bg-white/15 backdrop-blur-md border border-white/25 shadow-sm text-white mx-auto text-left justify-center">
+            <div className="flex items-center justify-center gap-5 sm:gap-6 md:gap-3">
+              {/* Columna 1: Icono de llave */}
               <div className="flex-shrink-0 flex items-center justify-center">
-                <Key className="w-6 h-6 sm:w-7 sm:h-7 md:w-4 md:h-4 text-amber-300" />
+                <Key className="w-7 h-7 sm:w-8 sm:h-8 md:w-4 md:h-4 text-amber-300" />
               </div>
 
-              {/* Columna 2 (~80%): Pregunta arriba y enlace abajo en mobile, inline en desktop */}
-              <div className="flex flex-col md:flex-row md:items-center gap-1 md:gap-3 text-left flex-1">
-                <p className="text-[13px] sm:text-[14px] font-semibold text-white leading-tight">
+              {/* Columna 2: Pregunta arriba y enlace abajo en mobile, inline en desktop */}
+              <div className="flex flex-col md:flex-row md:items-center gap-1 md:gap-3 text-left">
+                <p className="text-[13px] sm:text-[14px] font-semibold text-white leading-snug">
                   ¿Necesitas tu Token de API
                   <br className="block md:hidden" />{' '}
                   para configurar el plugin?
@@ -112,7 +112,7 @@ const PluginsSection = ({ onSelectPluginForContact, onOpenManual, onOpenVideo })
                   href="https://starkenpro.cl/login?formPlugin=true"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[13px] sm:text-[14px] font-bold text-white underline hover:text-white/80 inline-flex items-center gap-1 leading-tight whitespace-nowrap"
+                  className="text-[13px] sm:text-[14px] font-bold text-white underline hover:text-white/80 inline-flex items-center gap-1 leading-snug whitespace-nowrap"
                 >
                   Obtener Token en StarkenPro
                   <ArrowUpRight className="w-3.5 h-3.5" />
